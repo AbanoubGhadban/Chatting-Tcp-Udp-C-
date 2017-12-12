@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChattingTest", "ChattingTest\ChattingTest.csproj", "{D945199A-DE87-45B4-81F4-C967A56EF2C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorkerTest", "BackgroundWorkerTest\BackgroundWorkerTest.csproj", "{C59906B8-3899-4AEC-AD1E-4FE7440F91B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxTest", "ListBoxTest\ListBoxTest.csproj", "{0838728B-7B88-4F3B-8174-BD4D8BE0920A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D945199A-DE87-45B4-81F4-C967A56EF2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D945199A-DE87-45B4-81F4-C967A56EF2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D945199A-DE87-45B4-81F4-C967A56EF2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D945199A-DE87-45B4-81F4-C967A56EF2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59906B8-3899-4AEC-AD1E-4FE7440F91B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59906B8-3899-4AEC-AD1E-4FE7440F91B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59906B8-3899-4AEC-AD1E-4FE7440F91B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59906B8-3899-4AEC-AD1E-4FE7440F91B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0838728B-7B88-4F3B-8174-BD4D8BE0920A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0838728B-7B88-4F3B-8174-BD4D8BE0920A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0838728B-7B88-4F3B-8174-BD4D8BE0920A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0838728B-7B88-4F3B-8174-BD4D8BE0920A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

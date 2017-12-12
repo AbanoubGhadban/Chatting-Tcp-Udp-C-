@@ -1,0 +1,9 @@
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.csprojResolveAssemblyReference.cache
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.Form1.resources
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.Properties.Resources.resources
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.csproj.GenerateResource.Cache
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\bin\Debug\ChattingTest.exe.config
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\bin\Debug\ChattingTest.exe
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\bin\Debug\ChattingTest.pdb
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.exe
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.pdb

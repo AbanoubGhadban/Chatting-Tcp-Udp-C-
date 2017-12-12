@@ -1,0 +1,8 @@
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\bin\Debug\ListBoxTest.exe
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\bin\Debug\ListBoxTest.pdb
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\obj\Debug\ListBoxTest.csprojResolveAssemblyReference.cache
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\obj\Debug\ListBoxTest.Form1.resources
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\obj\Debug\ListBoxTest.Properties.Resources.resources
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\obj\Debug\ListBoxTest.csproj.GenerateResource.Cache
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\obj\Debug\ListBoxTest.exe
+C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ListBoxTest\obj\Debug\ListBoxTest.pdb
