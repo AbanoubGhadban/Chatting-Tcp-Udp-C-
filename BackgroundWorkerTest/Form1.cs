@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
@@ -40,6 +42,16 @@ namespace BackgroundWorkerTest
                 
             };
             bw.RunWorkerAsync();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            String hostname = Dns.GetHostName();
+            foreach (var ip in Dns.GetHostAddresses(hostname))
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    MessageBox.Show(ip.ToString());
+            }
         }
     }
 }

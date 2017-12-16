@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 
 namespace ChattingTest
@@ -19,5 +21,18 @@ namespace ChattingTest
         internal const String USER_NAME_PREFIX = "un3$%:";
 
         internal const int PORT = 2489;
+
+        public static IPAddress[] getLocalIPAddresses()
+        {
+            String hostname = Dns.GetHostName();
+            List<IPAddress> addresses = new List<IPAddress>();
+            foreach (var ip in Dns.GetHostAddresses(hostname))
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    addresses.Add(ip);
+            }
+            
+            return addresses.ToArray();
+        }
     }
 }

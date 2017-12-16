@@ -19,11 +19,17 @@ namespace ChattingTest.HelpingClasses
 
         public int CompareTo(User other)
         {
+            if (other == null)
+                return -1;
+
             return this.Name.CompareTo(other.Name);
         }
 
         public bool Equals(User other)
         {
+            if (other == null)
+                return false;
+
             return this.Name == other.Name;
         }
 

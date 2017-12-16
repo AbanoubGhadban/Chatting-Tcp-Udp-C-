@@ -22,35 +22,50 @@ namespace ChattingTest
 
         public List<Message> GetUserMessages(User user)
         {
-            List<Message> list = new List<Message>();
-            foreach (var msg in this.messages)
+            return messages.FindAll((m) =>
             {
-                if (msg.Sender.Equals(user) || msg.Reciever.Equals(user))
-                    list.Add(msg);
-            }
-            return list;
+                return m.Sender.Equals(user) || m.Reciever.Equals(user);
+            });
         }
 
         public List<Message> GetUserRecievedMessages(User user)
         {
-            List<Message> list = new List<Message>();
-            foreach (var msg in this.messages)
+            return messages.FindAll((m) =>
             {
-                if (msg.Reciever.Equals(user))
-                    list.Add(msg);
-            }
-            return list;
+                return m.Reciever.Equals(user);
+            });
         }
 
         public List<Message> GetUserSentMessages(User user)
         {
-            List<Message> list = new List<Message>();
-            foreach (var msg in this.messages)
+            return messages.FindAll((m) =>
             {
-                if (msg.Sender.Equals(user))
-                    list.Add(msg);
-            }
-            return list;
+                return m.Sender.Equals(user);
+            });
+        }
+
+        public void RemoveSentUserMessages(User user)
+        {
+            messages.RemoveAll((m) =>
+            {
+                return m.Sender.Equals(user);
+            });
+        }
+
+        public void RemoveReceivedUserMessages(User user)
+        {
+            messages.RemoveAll((m) =>
+            {
+                return m.Reciever.Equals(user);
+            });
+        }
+
+        public void RemoveUserMessages(User user)
+        {
+            messages.RemoveAll((m) =>
+            {
+                return m.Reciever.Equals(user) || m.Sender.Equals(user);
+            });
         }
     }
 }

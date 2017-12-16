@@ -17,3 +17,8 @@
 /mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/bin/Debug/Mono.WebBrowser.dll
 /mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/bin/Debug/System.Runtime.Serialization.Formatters.Soap.dll
 /mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/bin/Debug/Accessibility.dll
+/mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/bin/Debug/ChattingTest.exe.config
+/mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/bin/Debug/ChattingTest.exe.mdb
+/mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/bin/Debug/ChattingTest.exe
+/mnt/c/Users/Golden/Documents/Visual Studio 2015/Projects/Learning/ChattingTest/ChattingTest/obj/Debug/ChattingTest.exe.mdb
