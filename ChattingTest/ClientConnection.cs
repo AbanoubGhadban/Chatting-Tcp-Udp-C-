@@ -60,11 +60,15 @@ namespace ChattingTest.Connections
 
         public void Disconnect()
         {
-            if (client != null && client.Connected)
+            try
             {
-                client.Close();
-                this.socketManager.Disconnect();
+                if (client != null && client.Connected)
+                {
+                    client.Close();
+                    this.socketManager.Disconnect();
+                }
             }
+            catch (ObjectDisposedException) { }
         }
 
         public Message Send(string msg)

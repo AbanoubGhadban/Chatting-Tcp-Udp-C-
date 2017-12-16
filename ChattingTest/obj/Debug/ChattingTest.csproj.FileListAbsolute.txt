@@ -6,4 +6,3 @@ C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\Chat
 C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.csproj.GenerateResource.Cache
 C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.exe
 C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.pdb
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\ChattingTest\obj\Debug\ChattingTest.csprojResolveAssemblyReference.cache

@@ -1,8 +1,0 @@
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\bin\Debug\BackgroundWorkerTest.exe
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\bin\Debug\BackgroundWorkerTest.pdb
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\obj\Debug\BackgroundWorkerTest.csprojResolveAssemblyReference.cache
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\obj\Debug\BackgroundWorkerTest.Form1.resources
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\obj\Debug\BackgroundWorkerTest.Properties.Resources.resources
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\obj\Debug\BackgroundWorkerTest.csproj.GenerateResource.Cache
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\obj\Debug\BackgroundWorkerTest.exe
-C:\Users\Golden\Documents\Visual Studio 2015\Projects\Learning\ChattingTest\BackgroundWorkerTest\obj\Debug\BackgroundWorkerTest.pdb

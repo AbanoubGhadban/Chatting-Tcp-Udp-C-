@@ -1,4 +1,5 @@
-﻿using ChattingTest.Connections;
+﻿using ChattingTest.Broadcast;
+using ChattingTest.Connections;
 using ChattingTest.HelpingClasses;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace ChattingTest
     {
         private Dictionary<User, ClientConnection> connections;
         private ServerConnection server;
+        private UdpBroadcast broadcast;
+        private List<UdpReceiver> udpReceivers;
 
         private MessageManager manager;
         User currentUser;
@@ -22,13 +25,28 @@ namespace ChattingTest
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             this.lstMessages.Items.Clear();
             this.lstPeers.Items.Clear();
             manager = new MessageManager();
             connections = new Dictionary<User, ClientConnection>();
 
-            IPAddress address = Global.getLocalIPAddress();
-            this.txtServerAddress.Text = address.ToString();
+            IPAddress[] addresses = Global.getLocalIPAddresses();
+            this.cmbAddresses.Items.AddRange(addresses);
+            if (addresses.Length > 0)
+                this.cmbAddresses.SelectedIndex = 0;
+
+            udpReceivers = new List<UdpReceiver>();
+            foreach (var address in addresses)
+            {
+                var udpReceiver = new UdpReceiver(this, address);
+                udpReceiver.ServerFound += Broadcast_ServerFound;
+                udpReceiver.Start();
+                udpReceivers.Add(udpReceiver);
+            }
         }
 
         private void Server_ConnectionAccepted(ClientConnection connection)
@@ -67,16 +85,40 @@ namespace ChattingTest
             {
                 this.server.Stop();
                 this.server = null;
+                this.broadcast.Cancel();
+                this.broadcast = null;
                 this.btnListen.Text = "Listen";
             }
             else
             {
-                IPAddress address = Global.getLocalIPAddress();
+                IPAddress address;
+                try
+                {
+                    address = IPAddress.Parse(this.cmbAddresses.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("IP Address you entered is invalid, Please try again.", "Invalid IP Address", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 this.server = new ServerConnection(this, txtUserName.Text, new IPEndPoint(address, Global.PORT));
                 this.server.LocalUserName = this.txtUserName.Text;
                 this.server.ConnectionAccepted += Server_ConnectionAccepted;
                 server.Start();
+
+                this.broadcast = new UdpBroadcast();
+                this.broadcast.Start(address);
                 this.btnListen.Text = "Stop";
+            }
+        }
+
+        private void Broadcast_ServerFound(IPAddress address)
+        {
+            if (!this.txtServerAddress.Items.Contains(address))
+            {
+                this.txtServerAddress.Items.Add(address);
+                if (this.txtServerAddress.SelectedIndex < 0)
+                    this.txtServerAddress.SelectedIndex = 0;
             }
         }
 
@@ -121,6 +163,12 @@ namespace ChattingTest
             {
                 con.Disconnect();
             }
+
+            broadcast?.Cancel();
+            foreach (var receiver in udpReceivers)
+            {
+                receiver.Cancel();
+            }
         }
 
         private void txtMessage_KeyUp(object sender, KeyEventArgs e)
@@ -130,6 +178,25 @@ namespace ChattingTest
                 this.btnSend.PerformClick();
                 e.Handled = true;
             }
+        }
+
+        private void cmbAddresses_TextChanged(object sender, EventArgs e)
+        {
+            String text = this.cmbAddresses.Text;
+            IPAddress ip;
+            this.btnListen.Enabled = IPAddress.TryParse(text, out ip);
+        }
+
+        private void txtServerAddress_TextChanged(object sender, EventArgs e)
+        {
+            String text = this.txtServerAddress.Text;
+            IPAddress ip;
+            this.btnConnect.Enabled = IPAddress.TryParse(text, out ip);
+        }
+
+        private void txtServerAddress_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
